@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import LoginPage from './components/loginPage';
+import ErrorPage from './components/errorPage';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -9,7 +11,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {  
     path: "/",
-    element: <App/>
+    element: <LoginPage/>,
+    errorElement: <ErrorPage/>
+  },
+  {
+   path: "/focus",
+   element: <App/>,
+   errorElement: <ErrorPage/> 
   }
 ]);
 

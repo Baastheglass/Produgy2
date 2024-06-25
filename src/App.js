@@ -3,8 +3,8 @@ import './App.css';
 import List from "./components/list"
 
 function App() {
-  const [checkBoxValues, setcheckBoxValues] = useState([false, false, false, false, false, false, false, false, false, false, false, false]);
-  const [taskNames, setTaskName] = useState(['', '', '', '', '', '', '', '', '', '', '', '']);
+  const [checkBoxValues, setcheckBoxValues] = useState([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
+  const [taskNames, setTaskName] = useState(['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
 
   useEffect(() =>
   {
